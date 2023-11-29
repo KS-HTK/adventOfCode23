@@ -1,0 +1,6 @@
+# ignore any txt files
+*.txt
+*.s*
+
+# ignore all __pycache__ directories
+**/__pycache__
