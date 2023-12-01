@@ -15,12 +15,7 @@ def profiler(method):
 
 # Part 1:
 def part1(content = None) -> str|int:
-  total = 0
-  for line in content:
-    digits = re.findall(r'\d', line)
-    if digits:
-      total += int(digits[0] + digits[-1])
-  return total
+  return sum([int(re.search(r'\d', line)[0]+re.search(r'.*\d', line)[0][-1]) for line in content])
 
 # Part 2:
 def part2(content = None) -> str|int:
