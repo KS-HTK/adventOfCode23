@@ -1,6 +1,7 @@
 # ignore any txt files
 *.txt
 *.s*
+*.ps1
 
 # ignore all __pycache__ directories
 **/__pycache__
