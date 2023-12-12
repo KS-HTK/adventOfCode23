@@ -24,7 +24,7 @@ def timeall():
   if not times:
     return
   max_time = max(times.keys())
-  print(times[max_time], f'{max_time:,.4f}', 'sec')
+  print(f'{times[max_time]} is the slowest, it took : {max_time:,.4f} sec')
 
 if __name__ == "__main__":
   timeall()
