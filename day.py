@@ -28,8 +28,8 @@ def get_input():
 @profiler
 def solve():
   content = get_input()
-  print("Part 1:", part1(content))
-  print("Part 2:", part2(content))
+  print(f'Part 1: {part1(content)}')
+  print(f'Part 2: {part2(content)}')
 
 if __name__ == "__main__":
   solve()
